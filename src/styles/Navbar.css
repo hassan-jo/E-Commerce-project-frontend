@@ -1,0 +1,88 @@
+/* Navbar SaaS Professional Style */
+
+.navbar{
+  background: rgba(25,118,210,0.98) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 25px rgba(0,0,0,0.12);
+  transition: 0.3s ease;
+  padding: 6px 0;
+}
+
+/* Logo Text */
+
+.logo-text-desktop,
+.logo-text-mobile{
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+  transition: .25s;
+}
+
+.logo-text-desktop:hover,
+.logo-text-mobile:hover{
+  opacity: .85;
+}
+
+/* Navigation Buttons */
+
+.nav-button{
+  margin: 12px 6px !important;
+  color: white !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+  padding: 6px 14px !important;
+  transition: .3s ease !important;
+}
+
+.nav-button:hover{
+  background: rgba(255,255,255,0.15) !important;
+  transform: translateY(-2px);
+}
+
+/* Desktop Pages Container */
+
+.desktop-pages{
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+/* User Section */
+
+.user-section{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icons */
+
+.logo-icon-desktop,
+.logo-icon-mobile{
+  margin-right: 8px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px){
+
+  .desktop-pages{
+    display: none;
+  }
+
+}
+
+/* Desktop Only Elements */
+
+@media (min-width: 900px){
+
+  .mobile-menu-icon,
+  .logo-icon-mobile,
+  .logo-text-mobile{
+    display: none !important;
+  }
+
+}
